@@ -4,6 +4,8 @@ set mouse=a
 set wildignorecase
 set wildmenu
 set wildmode=longest,list,full
+set signcolumn=yes
+
 
 filetype plugin indent on
 
@@ -21,4 +23,8 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " Install plugs
 call plug#begin('~/.config/nvim/myplugindir')
 	Plug 'airblade/vim-gitgutter'
+	Plug 'dracula/vim'
+	Plug 'tpope/vim-fugitive'
 call plug#end()
+
+colors dracula
