@@ -11,7 +11,10 @@ set shiftwidth=4
 
 filetype plugin indent on
 
+" Disable things
 :nmap <F1> <nop>
+:map q <nop>
+
 
 function! <SID>StripTrailingWhitespaces()
 	  let l = line(".")
@@ -33,8 +36,21 @@ call plug#begin('~/.config/nvim/myplugindir')
     Plug 'scrooloose/nerdtree'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'  " General fuzzy finder
-    Plug 'elixir-editors/vim-elixir'
     Plug 'elmcast/elm-vim'
+    " Elixir
+    Plug 'elixir-editors/vim-elixir'
+    Plug 'mhanberg/elixir-ls'
+    " LSP things
+    Plug 'neovim/nvim-lspconfig'
+    " Autocomplete
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    " Snippets?
+    " Plug 'hrsh7th/cmp-vsnip'
+    " Plug 'hrsh7th/vim-vsnip'
+
+    Plug 'onsails/lspkind-nvim'
+
 
 call plug#end()
 
@@ -71,3 +87,6 @@ map § <leader>
 
 " Ignore .gitignore
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+" Set up Elixir crap
+lua require('elixir')
