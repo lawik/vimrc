@@ -10,12 +10,12 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 local cmp = require("cmp")
 
 cmp.setup({
-  --snippet = {
-  --  expand = function(args)
-  --    -- For `vsnip` user.
-  --    vim.fn["vsnip#anonymous"](args.body)
-  --  end,
-  --},
+  snippet = {
+    expand = function(args)
+      -- For `vsnip` user.
+      vim.fn["vsnip#anonymous"](args.body)
+    end,
+  },
   mapping = {
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
@@ -25,7 +25,7 @@ cmp.setup({
   },
   sources = {
     { name = "nvim_lsp" },
-  --  { name = "vsnip" },
+    { name = "vsnip" },
   },
   formatting = {
     format = require("lspkind").cmp_format({
