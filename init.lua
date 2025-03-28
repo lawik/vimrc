@@ -18,4 +18,4 @@ set.expandtab = true
 set.shiftwidth = 4
 vim.cmd[[colorscheme dracula]]
 
-vim.cmd('source ~/neovimrc/vim/config.vim')
+vim.cmd('source ~/vimrc/vim/config.vim')
