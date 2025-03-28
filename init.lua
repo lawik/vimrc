@@ -16,5 +16,6 @@ set.signcolumn = 'yes'
 set.tabstop = 4
 set.expandtab = true
 set.shiftwidth = 4
+vim.cmd[[colorscheme dracula]]
 
 vim.cmd('source ~/neovimrc/vim/config.vim')

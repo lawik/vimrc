@@ -1,5 +1,6 @@
 {
   "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
+  "dracula.nvim": { "branch": "main", "commit": "96c9d19ce81b26053055ad6f688277d655b3f7d2" },
   "fzf-lua": { "branch": "main", "commit": "1dcef2467af609e0688f8136b8ea720645c9c41c" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "neogit": { "branch": "master", "commit": "333968f8222fda475d3e4545a9b15fe9912ca26a" },
